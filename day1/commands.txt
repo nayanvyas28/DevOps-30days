@@ -1,0 +1,41 @@
+# Day 01 – Linux Commands Practice
+
+pwd
+ls
+ls -la
+cd /home
+mkdir devops
+cd devops
+touch day1.txt
+nano day1.txt
+cat day1.txt
+cp day1.txt backup.txt
+mv backup.txt old_day1.txt
+rm old_day1.txt
+
+# Permissions
+ls -l
+chmod 755 day1.txt
+chmod +x day1.txt
+
+# System Monitoring
+top
+ps aux
+df -h
+free -m
+uptime
+
+# Networking
+ping google.com
+ip a
+netstat -tulnp
+curl https://example.com
+
+# User & Root
+whoami
+sudo su
+exit
+
+# SSH
+ssh ubuntu@your_server_ip
+    
