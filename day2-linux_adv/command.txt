@@ -1,0 +1,37 @@
+# Day 02 – Linux Deep Practice
+
+# Package Management
+-sudo apt update                     # Update package lists
+-sudo apt upgrade -y                 # Upgrade all packages
+-sudo apt install nginx -y           # Install nginx
+-sudo apt remove apache2 -y          # Remove apache2
+
+# Service Management
+-systemctl status nginx              # Check nginx service status
+-sudo systemctl start nginx          # Start nginx service
+-sudo systemctl stop nginx           # Stop nginx service
+-sudo systemctl restart nginx        # Restart nginx service
+-sudo systemctl enable nginx         # Enable nginx service
+
+# Logs
+-tail /var/log/syslog                # Display the last 10 lines of the syslog   
+-tail -f /var/log/syslog             # Display the last 10 lines of the syslog and follow the log file in real-time
+-journalctl                          # Display the system journal
+-journalctl -u nginx                 # Display the system journal for the nginx service
+
+# Environment Variables
+-echo $PATH                          # Display the PATH environment variable
+-env                                 # Display all environment variables
+-export APP_ENV=production           # Export a new environment variable
+-echo $APP_ENV                       # Display the value of the APP_ENV environment variable
+
+# Networking
+-ping google.com                    # Ping google.com   
+-curl http://localhost              # Make a HTTP request to localhost
+-netstat -tulnp                     # Display all listening ports
+-ss -tulnp                          # Display all listening ports (alternative to netstat)  
+
+# Firewall
+-sudo ufw status                    # Display the current firewall status
+-sudo ufw allow 80                  # Allow incoming traffic on port 80
+-sudo ufw enable                    # Enable the firewall
