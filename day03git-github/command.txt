@@ -1,0 +1,35 @@
+# Day 03 – Git Commands Practice
+
+# Git Setup
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "youremail@gmail.com"
+
+# Create Repository
+mkdir devops-30-days
+cd devops-30-days
+git init
+
+# Check Status
+git status
+
+# Add Files
+git add .
+git commit -m "Day 3: Initial Git setup"
+
+# Branching
+git branch
+git branch dev
+git checkout dev
+git checkout -b feature-day3
+
+# Merge Branch
+git checkout main
+git merge dev
+
+# Remote Repository
+git remote add origin https://github.com/username/devops-30-days.git
+git push -u origin main
+
+# Pull Updates
+git pull origin main
