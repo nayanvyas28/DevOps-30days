@@ -1,0 +1,20 @@
+# Day 04 – AWS EC2 Practice Commands
+
+# Update system
+sudo apt update
+sudo apt upgrade -y
+
+# Install web server
+sudo apt install nginx -y
+
+# Check service
+systemctl status nginx
+
+# Enable nginx
+sudo systemctl enable nginx
+
+# Check IP
+ip a
+
+# Test locally
+curl http://localhost
