@@ -1,0 +1,32 @@
+# Day 05 – Shell Scripting Practice
+
+# Create script
+touch hello.sh
+nano hello.sh
+
+# Add execute permission
+chmod +x hello.sh
+
+# Run script
+./hello.sh
+
+# Variables
+NAME="DevOps"
+echo $NAME
+
+# Input
+read USER
+echo "Hello $USER"
+
+# If–Else Example
+if [ 10 -gt 5 ]; then echo "True"; else echo "False"; fi
+
+# Loop
+for i in 1 2 3; do echo $i; done
+
+# Disk Usage Automation
+df -h
+
+# Cron
+crontab -l
+crontab -e
