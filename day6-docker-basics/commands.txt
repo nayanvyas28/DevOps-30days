@@ -1,0 +1,27 @@
+# Day 06 – Docker Practice Commands
+
+# Check Docker
+docker --version
+docker info
+
+# Pull Image
+docker pull nginx
+
+# Run Container
+docker run nginx
+docker run -d -p 8080:80 nginx
+
+# List Containers
+docker ps
+docker ps -a
+
+# Stop & Remove
+docker stop <container_id>
+docker rm <container_id>
+
+# Images
+docker images
+docker rmi nginx
+
+# Logs
+docker logs <container_id>
