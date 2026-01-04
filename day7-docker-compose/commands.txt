@@ -1,0 +1,18 @@
+# Day 07 – Docker Compose Practice
+
+# Check Docker Compose
+docker compose version
+
+# Start services
+docker compose up
+docker compose up -d
+
+# List running services
+docker compose ps
+
+# View logs
+docker compose logs
+docker compose logs web
+
+# Stop services
+docker compose down
