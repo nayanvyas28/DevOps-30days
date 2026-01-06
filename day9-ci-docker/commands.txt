@@ -1,0 +1,8 @@
+# Day 09 – CI Docker Practice
+
+# Local test (optional)
+docker build -t username/myapp:latest .
+docker run -p 8080:80 username/myapp:latest
+
+# Pull image after CI push
+docker pull username/myapp:latest
