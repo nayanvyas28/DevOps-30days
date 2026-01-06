@@ -1,0 +1,7 @@
+# Day 08 – CI/CD Practice Notes
+
+# No local commands required for Actions
+# All execution happens in GitHub-hosted runners
+
+# Folder structure reminder:
+.github/workflows/ci.yml
