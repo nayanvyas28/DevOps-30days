@@ -1,0 +1,6 @@
+# Day 10 – Deployment Commands (Executed via CI)
+
+docker pull username/myapp:latest
+docker stop myapp || true
+docker rm myapp || true
+docker run -d --name myapp -p 80:80 username/myapp:latest
