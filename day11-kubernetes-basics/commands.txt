@@ -1,0 +1,21 @@
+# Day 11 – Kubernetes Commands Practice
+
+# Check kubectl
+kubectl version --client
+
+# Cluster info
+kubectl cluster-info
+kubectl get nodes
+
+# Pods
+kubectl get pods
+kubectl describe pod pod-name
+
+# Deployments
+kubectl get deployments
+
+# Services
+kubectl get services
+
+# Namespaces
+kubectl get namespaces

@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
           script: |
-            docker pull ${{ secrets.DOCKER_USERNAME }}/myapp:latest
+            docker pull ${{ secrets.DOCKER_USERNAME }}/myapp:v1
             docker stop myapp || true
             docker rm myapp || true
-            docker run -d --name myapp -p 80:80 ${{ secrets.DOCKER_USERNAME }}/myapp:latest
+            docker run -d --name myapp -p 80:80 ${{ secrets.DOCKER_USERNAME }}/myapp:v1
