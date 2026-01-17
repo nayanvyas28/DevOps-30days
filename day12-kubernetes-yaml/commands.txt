@@ -1,0 +1,20 @@
+# Day 12 – Kubernetes YAML Practice
+
+# Apply YAML
+kubectl apply -f pod.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+# Check resources
+kubectl get pods
+kubectl get deployments
+kubectl get services
+
+# Describe resources
+kubectl describe pod nginx-pod
+kubectl describe deployment nginx-deployment
+
+# Delete resources
+kubectl delete -f pod.yaml
+kubectl delete -f deployment.yaml
+kubectl delete -f service.yaml
