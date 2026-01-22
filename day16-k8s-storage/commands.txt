@@ -1,0 +1,21 @@
+# Day 16 – Kubernetes Storage Commands
+
+# Check storage resources
+kubectl get pv
+kubectl get pvc
+
+# Apply YAML files
+kubectl apply -f pv.yaml
+kubectl apply -f pvc.yaml
+kubectl apply -f deployment.yaml
+
+# Verify binding
+kubectl get pv
+kubectl get pvc
+
+# Check pod
+kubectl get pods
+kubectl describe pod <pod-name>
+
+# Test persistence
+kubectl exec -it <pod-name> -- sh
