@@ -1,0 +1,16 @@
+# Day 17 – StatefulSet Commands (Reference)
+
+# List StatefulSets
+kubectl get statefulsets
+
+# Describe StatefulSet
+kubectl describe statefulset mysql
+
+# Get pods with stable names
+kubectl get pods
+
+# Check PVCs created by StatefulSet
+kubectl get pvc
+
+# Headless service DNS format
+<pod-name>.<service-name>.<namespace>.svc.cluster.local
