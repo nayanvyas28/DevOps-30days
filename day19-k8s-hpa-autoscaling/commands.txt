@@ -1,0 +1,15 @@
+# Day 19 – HPA Commands (Reference)
+
+# Check metrics server
+kubectl get pods -n kube-system
+
+# Create HPA
+kubectl apply -f hpa.yaml
+
+# View HPA
+kubectl get hpa
+kubectl describe hpa nginx-hpa
+
+# Check resource usage
+kubectl top pods
+kubectl top nodes
