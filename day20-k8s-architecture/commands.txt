@@ -1,0 +1,18 @@
+# Day 20 – Kubernetes Architecture Commands (Reference)
+
+# View control plane components
+kubectl get pods -n kube-system
+
+# API Server interaction
+kubectl get all
+
+# Node components
+kubectl get nodes
+kubectl describe node <node-name>
+
+# Controllers in action
+kubectl get deployments
+kubectl get replicasets
+
+# Events (see reconciliation)
+kubectl get events
