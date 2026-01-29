@@ -1,0 +1,16 @@
+# Day 18 – Kubernetes Networking Commands (Reference)
+
+# List services
+kubectl get services
+
+# Describe service
+kubectl describe service my-service
+
+# Check endpoints
+kubectl get endpoints
+
+# Test DNS inside pod
+kubectl exec -it <pod-name> -- nslookup my-service
+
+# kube-proxy runs as daemonset
+kubectl get daemonset -n kube-system

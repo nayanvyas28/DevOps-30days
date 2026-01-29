@@ -1,0 +1,24 @@
+
+# Day 13 – Kubernetes Scaling & Rollouts
+
+# Check deployment
+kubectl get deployments
+
+# Scale deployment
+kubectl scale deployment nginx-deployment --replicas=3
+kubectl get pods
+
+# Rolling update (change image)
+kubectl set image deployment/nginx-deployment nginx=nginx:1.25
+
+# Check rollout status
+kubectl rollout status deployment nginx-deployment
+
+# View rollout history
+kubectl rollout history deployment nginx-deployment
+
+# Rollback deployment
+kubectl rollout undo deployment nginx-deployment
+
+# Describe deployment
+kubectl describe deployment nginx-deployment

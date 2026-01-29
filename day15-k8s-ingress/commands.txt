@@ -1,0 +1,18 @@
+# Day 15 – Kubernetes Ingress Commands
+
+# Enable Ingress in Minikube
+minikube addons enable ingress
+
+# Verify controller
+kubectl get pods -n ingress-nginx
+
+# Apply resources
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+kubectl apply -f ingress.yaml
+
+# Check ingress
+kubectl get ingress
+
+# Test routing
+minikube ip

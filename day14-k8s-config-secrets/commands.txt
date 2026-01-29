@@ -1,0 +1,16 @@
+# Day 14 – ConfigMaps & Secrets Practice
+
+# Create from YAML
+kubectl apply -f configmap.yaml
+kubectl apply -f secret.yaml
+
+# Verify
+kubectl get configmaps
+kubectl get secrets
+
+# Describe
+kubectl describe configmap app-config
+kubectl describe secret app-secret
+
+# Check env inside pod
+kubectl exec -it <pod-name> -- env
